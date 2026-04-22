@@ -1,7 +1,7 @@
 # 👨‍💻 Janarthanan S - Portfolio Website
 
 ## 🔗 Live Website
-👉 https://janarthananweb.vercel.app/
+👉 https://janarthanan-vert.vercel.app/
 
 ---
 
