@@ -2162,21 +2162,52 @@ body.menu-open {
 
 <script>
     // ── SKILLS DATA ──
-    const skills = [
-      { name: 'Python', level: 92, tag: 'Core' },
-      { name: 'SQL', level: 62, tag: 'Core' },
-      { name: 'Data Structures & Algorithms', level: 90, tag: 'Core' },
-      { name: 'Machine Learning', level: 78, tag: 'ML' },
-      { name: 'Pandas / NumPy', level: 85, tag: 'ML' },
-      { name: 'scikit-learn', level: 75, tag: 'ML' },
-      { name: 'Matplotlib', level: 80, tag: 'ML' },
-      { name: 'Streamlit', level: 82, tag: 'Framework' },
-      { name: 'HTML / CSS', level: 70, tag: 'Frontend' },
-      { name: 'Git / GitHub', level: 85, tag: 'Tooling' },
-      { name: 'Google Cloud', level: 60, tag: 'Cloud' },
-      { name: 'Firebase', level: 65, tag: 'Cloud' },
-      { name: 'Java (Basic)', level: 50, tag: 'Language' },
-    ];
+  const skills = [
+    // Core Languages
+    { name: 'Python', level: 92, tag: 'Core' },
+    { name: 'SQL', level: 75, tag: 'Core' },
+    { name: 'Data Structures & Algorithms', level: 90, tag: 'Core' },
+    { name: 'Java (Basic)', level: 50, tag: 'Core' },
+
+    // Backend & APIs
+    { name: 'FastAPI', level: 85, tag: 'Backend' },
+    { name: 'REST API Development', level: 85, tag: 'Backend' },
+    { name: 'JWT / OAuth2', level: 80, tag: 'Backend' },
+    { name: 'Pydantic', level: 80, tag: 'Backend' },
+
+    // Databases
+    { name: 'PostgreSQL', level: 82, tag: 'Database' },
+    { name: 'SQLAlchemy ORM', level: 80, tag: 'Database' },
+    { name: 'Alembic', level: 75, tag: 'Database' },
+    { name: 'Redis (Basic)', level: 55, tag: 'Database' },
+    { name: 'SQLite', level: 75, tag: 'Database' },
+
+    // Cloud & DevOps
+    { name: 'AWS (EC2, S3, RDS)', level: 65, tag: 'Cloud' },
+    { name: 'Docker / Docker Compose', level: 78, tag: 'DevOps' },
+    { name: 'GitHub Actions (CI/CD)', level: 75, tag: 'DevOps' },
+    { name: 'Firebase', level: 65, tag: 'Cloud' },
+    { name: 'Google Cloud', level: 60, tag: 'Cloud' },
+
+    // Testing & Tools
+    { name: 'Pytest', level: 75, tag: 'Testing' },
+    { name: 'Postman', level: 80, tag: 'Tools' },
+    { name: 'Swagger UI', level: 75, tag: 'Tools' },
+    { name: 'Git / GitHub', level: 88, tag: 'Tools' },
+
+    // ML & Data
+    { name: 'Machine Learning', level: 78, tag: 'ML' },
+    { name: 'Pandas / NumPy', level: 85, tag: 'ML' },
+    { name: 'Matplotlib', level: 80, tag: 'ML' },
+    { name: 'scikit-learn', level: 75, tag: 'ML' },
+    { name: 'NLP', level: 78, tag: 'ML' },
+    { name: 'Deep Learning', level: 72, tag: 'ML' },
+    { name: 'OpenCV / YOLOv11', level: 75, tag: 'ML' },
+
+    // Frontend
+    { name: 'HTML / CSS', level: 70, tag: 'Frontend' },
+    { name: 'Streamlit', level: 82, tag: 'Frontend' },
+  ];
 
       try {
         const list = document.getElementById('skillsList');
