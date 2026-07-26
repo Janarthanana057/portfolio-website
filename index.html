@@ -2232,6 +2232,8 @@ body.menu-open {
       }
 
     // ── 1. UNIQUE CURSOR: FIRE COMET + ORBITING SPARKS ──
+  if (!window.matchMedia("(hover: none), (pointer: coarse)").matches) {
+
     const crosshair = document.getElementById('cursorCrosshair');
     const ringRotate = document.getElementById('cursorRingRotate');
     const cursorCanvas = document.getElementById('cursor-canvas');
@@ -2336,7 +2338,7 @@ body.menu-open {
       crx += (cmx - crx) * 0.16;
       cry += (cmy - cry) * 0.16;
 
-      // Update tail
+      // Update tailgit
       tail.unshift({ x: crx, y: cry });
       if (tail.length > TAIL_LEN) tail.pop();
 
@@ -2437,6 +2439,7 @@ body.menu-open {
       glow.style.left = e.clientX + 'px';
       glow.style.top  = e.clientY + 'px';
     });
+  }
 
     // ── 3. PARTICLE CANVAS ──
     const canvas = document.getElementById('particles-canvas');
